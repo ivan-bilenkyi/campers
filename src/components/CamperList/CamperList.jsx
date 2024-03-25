@@ -1,6 +1,6 @@
 import { List, ListWrapp, ButtonStyle } from "./CamperList.styled.js";
 import { useDispatch, useSelector } from "react-redux";
-import { selectorCampers } from "../../redux/campers/selectors.js";
+import { selectorCampers, selectorIsLoading } from '../../redux/campers/selectors.js';
 import { CamperItem } from "../CamperItem/CamperItem.jsx";
 import { useEffect, useState, useMemo } from "react";
 import { getAll } from "../../redux/campers/operations.js";
@@ -8,6 +8,7 @@ import { getAll } from "../../redux/campers/operations.js";
 export const CamperList = () => {
     const dispatch = useDispatch();
     const campers = useSelector(selectorCampers);
+    const isLoading = useSelector(selectorIsLoading)
     const [loadMore, setLoadMore] = useState(false);
     const [page, setPage] = useState(1);
     const limit = 4;
@@ -31,7 +32,8 @@ export const CamperList = () => {
             <List>
                 {campers && campers.length > 0 && campers.map(item => <CamperItem key={item._id} camper={item} />)}
             </List>
-            {loadMore && <ButtonStyle onClick={handleLoadMore}>Load more</ButtonStyle>}
+            {!isLoading && loadMore && <ButtonStyle onClick={handleLoadMore}>Load more</ButtonStyle>}
+
         </ListWrapp>
     );
 };
