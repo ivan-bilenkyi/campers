@@ -1,9 +1,11 @@
+import { Section } from '../components/Container.styled.js';
+
 export default function Home() {
     return (
-        <div>
+        <Section>
             <h1>
                 Home
             </h1>
-        </div>
+        </Section>
     );
 }
