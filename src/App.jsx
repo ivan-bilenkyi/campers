@@ -9,13 +9,9 @@ const CatalogPage = lazy(() => import('./pages/Catalog.jsx'));
 const FavoritePage = lazy(() => import('./pages/Favorite.jsx'));
 const NotFoundPage = lazy(() => import('./pages/NotFound.jsx'));
 
-
 function App() {
 
-
-
   return (
-
     <Routes>
       <Route path="/" element={<AppLayout />}>
         <Route index element={<HomePage />} />
