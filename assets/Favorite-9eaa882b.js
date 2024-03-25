@@ -1,0 +1,1 @@
+import{a,j as r}from"./index-25b82b80.js";import{e as t,W as o,L as p,c as i,C as c}from"./CamperItem-32794765.js";function l(){const e=a(t);return r.jsx(o,{children:r.jsx(p,{children:r.jsx(i,{children:e&&e.length>0&&e.map(s=>r.jsx(c,{camper:s},s._id))})})})}export{l as default};
