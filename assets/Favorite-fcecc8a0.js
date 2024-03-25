@@ -1,1 +1,0 @@
-import{a,j as r}from"./index-02dccb57.js";import{f as t,S as i,W as o,L as c,c as p,C as n}from"./Container.styled-5163ef47.js";function x(){const s=a(t);return r.jsx(i,{children:r.jsx(o,{children:r.jsx(c,{children:r.jsx(p,{children:s&&s.length>0&&s.map(e=>r.jsx(n,{camper:e},e._id))})})})})}export{x as default};
