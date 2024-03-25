@@ -26,7 +26,7 @@ export const ButtonStyle = styled.button`
     letter-spacing: -0.01em;
     color: var(--main);
     cursor: pointer;
-    margin: 0 auto 50px;
+    margin: 0 auto;
     transition: border-color 0.3s ease;
 
     &:hover {
