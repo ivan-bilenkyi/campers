@@ -1,4 +1,4 @@
-import{s}from"./index-823a16ba.js";const t=s.div`
+import{s}from"./index-c098b777.js";const t=s.div`
     display: flex;
     gap: 59px;
 `,a=s.section`
