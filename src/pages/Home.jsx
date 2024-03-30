@@ -1,11 +1,10 @@
 import { Section } from '../components/Container.styled.js';
+import { Welcome } from '../components/Welcome/Welcome.jsx';
 
 export default function Home() {
     return (
         <Section>
-            <h1>
-                Home
-            </h1>
+          <Welcome />
         </Section>
     );
 }

@@ -62,7 +62,7 @@ export const ItemTitleWrap = styled.div`
     margin-bottom: 8px;
 `
 
-export const ItemTitle = styled.p`
+export const ItemTitle = styled.h2`
     font-weight: 600;
     font-size: 24px;
     line-height: 125%;
