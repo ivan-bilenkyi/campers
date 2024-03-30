@@ -1,4 +1,4 @@
-import{s,j as e,u as F,a as j,r as a,g as L}from"./index-c098b777.js";import{F as f,a as S,b as $,s as C,B as H,L as A,c as V,C as E,d as I}from"./CamperItem-7d4ea7a1.js";import{S as M,C as T}from"./Container.styled-e07da7f1.js";const W=s.aside`
+import{s,j as e,u as F,a as j,r as a,g as L}from"./index-3379bda7.js";import{F as f,a as S,b as $,s as C,B as H,L as A,c as V,C as E,d as I}from"./CamperItem-4df732d5.js";import{S as M,C as T}from"./Container.styled-5a9a04d5.js";const W=s.aside`
     max-width: 365px;
     width: 100%;
 `,z=s.div`
