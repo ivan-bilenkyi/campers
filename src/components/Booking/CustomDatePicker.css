@@ -97,4 +97,5 @@
     background: var(--inputs);
     border-radius: 10px;
     border: none;
+    padding-right: 12px;
 }

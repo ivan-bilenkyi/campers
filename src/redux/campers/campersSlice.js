@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { getAll } from './operations';
 
-const camperSlise = createSlice({
+const camperSlice = createSlice({
     name: 'campers',
     initialState: {
         items: [],
@@ -31,4 +31,4 @@ const camperSlise = createSlice({
     },
 });
 
-export const camperReducer = camperSlise.reducer;
+export const camperReducer = camperSlice.reducer;
