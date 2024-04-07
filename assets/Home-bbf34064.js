@@ -1,4 +1,4 @@
-import{s as e,N as i,j as t}from"./index-855ea992.js";import{S as o}from"./Container.styled-943e81c2.js";const n="/campers/assets/welcome-page-image-1x-90cc3fb5.jpg",r="/campers/assets/welcome-page-image-2x-2048a59d.jpg",a=e.div`
+import{s as e,N as i,j as t}from"./index-834baf28.js";import{S as o}from"./Container.styled-e5e350ea.js";const n="/campers/assets/welcome-page-image-1x-90cc3fb5.jpg",r="/campers/assets/welcome-page-image-2x-2048a59d.jpg",a=e.div`
   //padding-top: 100px;
 `,s=e.div`
   position: relative;
