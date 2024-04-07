@@ -12,7 +12,17 @@ import { Formik, Form } from 'formik';
 import sprite from "assets/filter-icons.svg"
 import location from "assets/categories.svg"
 import { ButtonStyle } from "../Parts/Button/Button.styled.js";
+import { useDispatch, useSelector } from 'react-redux';
+import { selectorFilter } from '../../redux/campers/selectors.js';
+import { updateFilter } from '../../redux/campers/campersSlice.js';
 export const Filter = () => {
+    const valueFilter = useSelector(selectorFilter);
+    const dispatch = useDispatch();
+
+    const handleInputChange = (event) => {
+        const newValue = event.target.value;
+        dispatch(updateFilter(newValue));
+    };
 
     return (
         <Aside>
@@ -28,7 +38,8 @@ export const Filter = () => {
                 <Form>
                     <FilterTitle>Location</FilterTitle>
                     <FieldLocationWrap>
-                        <FieldLocation name="location" placeholder="City"/>
+                        <FieldLocation name="location" placeholder="City" value={valueFilter}
+                                       onChange={handleInputChange}/>
                         <SvgIcon width="18" height="20">
                             <use xlinkHref={`${location}#location`}/>
                         </SvgIcon>

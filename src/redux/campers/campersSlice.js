@@ -5,9 +5,18 @@ const camperSlice = createSlice({
     name: 'campers',
     initialState: {
         items: [],
+        filter: '',
         isLoading: false,
         error: null,
     },
+
+    reducers: {
+        updateFilter: (state, action) => {
+            state.items = [];
+            state.filter = action.payload;
+        }
+    },
+
 
     extraReducers: builder => {
         builder
@@ -25,10 +34,11 @@ const camperSlice = createSlice({
                 });
             })
             .addCase(getAll.rejected, (state, action) => {
-                state.isLoading = false;
-                state.error = action.error.message || 'Failed to fetch data';
+                  state.isLoading = false;
+                  state.error = action.error.message || 'Failed to fetch data';
             })
     },
 });
 
 export const camperReducer = camperSlice.reducer;
+export const { updateFilter } = camperSlice.actions;
